@@ -18,5 +18,5 @@ function showImage() {
 } 
 window.onload = function () {
     document.getElementById("copyright").innerHTML = new Date().getFullYear();
-    setInterval(showImage,5000);
+    setInterval(() => { showImage(); }, 5000);
 }
